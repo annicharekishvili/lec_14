@@ -1,0 +1,259 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+header {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+header nav ul li {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+}
+@media only screen and (max-width: 450px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav .icon {
+  display: none;
+}
+@media only screen and (max-width: 450px) {
+  header nav .icon {
+    display: inline-block;
+  }
+}
+
+section .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+section .cards .card {
+  width: 310px;
+}
+section .cards .card .card-image {
+  width: 100%;
+  height: 175px;
+  background-image: url(../images/card.jpg);
+  padding: 32px 41px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section .cards .card .card-image p {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+@media only screen and (max-width: 1083px) {
+  section .cards .card .card-image {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  section .cards .card .card-image {
+    height: 175px;
+  }
+}
+section .cards .card .card-info {
+  width: 100%;
+  background: white;
+  padding: 60px 37px 41px 37px;
+}
+section .cards .card .card-info p {
+  font-size: 10px;
+  font-weight: 700;
+  color: #8a8787;
+  line-height: 26px;
+}
+@media only screen and (max-width: 1083px) {
+  section .cards .card .card-info p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  section .cards .card .card-info p {
+    font-size: 10px;
+  }
+}
+section .cards .card .card-info .time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+@media only screen and (max-width: 1083px) {
+  section .cards .card {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1083px) {
+  section .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */

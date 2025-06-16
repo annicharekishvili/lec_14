@@ -1,0 +1,108 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+.container {
+  @include container;
+}
+
+body {
+  background-color: $background-color;
+}
+
+header {
+  padding: 20px 0;
+  margin-bottom: 30px;
+  nav {
+    @include flexContainer($justify: space-between);
+    ul {
+      @include flexContainer($justify: flex-start, $gap: 30px);
+
+      li {
+        font-size: 15px;
+        font-weight: 700;
+        color: $text-color;
+      }
+
+      @media only screen and (max-width: 450px) {
+        display: none;
+      }
+    }
+
+    .icon {
+      display: none;
+
+      @media only screen and (max-width: 450px) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+section {
+  .cards {
+    @include flexContainer($justify: space-between);
+
+    .card {
+      width: 310px;
+
+      .card-image {
+        width: 100%;
+        height: 175px;
+        background-image: url(../images/card.jpg);
+        padding: 32px 41px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        p {
+          font-size: 20px;
+          font-weight: 700;
+          color: white;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        @media only screen and (max-width: 1083px) {
+          height: 300px;
+        }
+
+        @media only screen and (max-width: 450px) {
+          height: 175px;
+        }
+      }
+
+      .card-info {
+        width: 100%;
+        background: white;
+        padding: 60px 37px 41px 37px;
+
+        p {
+          font-size: 10px;
+          font-weight: 700;
+          color: $cardTextColor;
+          line-height: 26px;
+
+          @media only screen and (max-width: 1083px) {
+            font-size: 15px;
+          }
+
+          @media only screen and (max-width: 450px) {
+            font-size: 10px;
+          }
+        }
+
+        .time {
+          @include flexContainer($justify: flex-start, $gap: 10px);
+        }
+      }
+
+      @media only screen and (max-width: 1083px) {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 1083px) {
+      @include flexContainer($justify: center, $direction: column, $gap: 40px);
+    }
+  }
+}
